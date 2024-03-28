@@ -1,76 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+        <title>PHP - Mail function for urgent and high priority</title>
+        <link href="style.css" rel="stylesheet" type="text/css" />
     </head>
     <body>
-        <form id="contactpage" method="POST" action="./contact-form.php">
-            <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-6">
-                    <div class="form-group mb-0">
-                        <input
-                            type="text"
-                            name="firstname"
-                            id="fname"
-                            class="form-control"
-                            placeholder="First Name"
-                        />
-                    </div>
+        <div class="contact-form">
+            <form action="send-mail.php" method="post">
+                <h2>Request call back.</h2>
+                <input type="text" name="name" placeholder="Name" required />
+                <input type="email" name="email" placeholder="Email" required />
+                <input type="text" name="phone" placeholder="Phone" />
+                <textarea
+                    rows="3"
+                    name="message"
+                    placeholder="message"
+                ></textarea>
+                <div class="text-right">
+                    <input
+                        type="submit"
+                        name="submit"
+                        value="Submit"
+                        class="btn"
+                    />
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-6">
-                    <div class="form-group mb-0">
-                        <input
-                            type="text"
-                            name="lastname"
-                            id="lname"
-                            class="form-control form_style"
-                            placeholder="Last Name"
-                        />
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-6">
-                    <div class="form-group mb-0">
-                        <input
-                            type="tel"
-                            name="phone"
-                            id="phonenum"
-                            class="form-control"
-                            placeholder="Phone"
-                        />
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-6">
-                    <div class="form-group mb-0">
-                        <input
-                            type="email"
-                            name="emailaddress"
-                            id="emailaddrs"
-                            class="form-control form_style"
-                            placeholder="Email"
-                        />
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="form-group mb-0">
-                        <textarea
-                            rows="3"
-                            name="msg"
-                            id="comment"
-                            class="form-control"
-                            placeholder="Message"
-                        ></textarea>
-                    </div>
-                </div>
-            </div>
-            <div class="btn_wrapper">
-                <button type="submit" name="get_started" id="started">
-                    Get Started
-                </button>
-            </div>
-        </form>
+            </form>
+        </div>
     </body>
+    <html></html>
 </html>
