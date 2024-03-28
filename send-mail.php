@@ -1,6 +1,6 @@
 <?php
 $email_to = 'parasgrover932@gmail.com'; // web admin address - emails sent to this address
-$sent_from = 'mail-ruddy-six.vercel.app'; // must be the domain where the webpage/form is hosted.
+$sent_from = 'noreply@mail-ruddy-six.vercel.app'; // must be the domain where the webpage/form is hosted.
 $email_subject = 'New Enquiry'; // set email subject
 $thankyou_page = '/thank-you.php'; // redirect users to thank you page after submitting the form
 if (isset($_POST['submit'])) {
